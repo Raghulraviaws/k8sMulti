@@ -17,3 +17,8 @@ jobs:
       - run: docker build -t raghulravi3016/multi-nginx ./nginx
       - run: docker build -t raghulravi3016/multi-server ./server
       - run: docker build -t raghulravi3016/multi-worker ./worker
+
+      - run: docker push raghulravi3016/multi-client
+      - run: docker push raghulravi3016/multi-nginx
+      - run: docker push raghulravi3016/multi-server
+      - run: docker push raghulravi3016/multi-worker
